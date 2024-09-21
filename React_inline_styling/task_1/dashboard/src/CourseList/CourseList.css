@@ -1,8 +1,17 @@
-tr th {
-    border-bottom: 1px solid grey;
+:root {
+  --border-table-color: rgb(170, 170, 170);
+}
+th {
+  border-top: 1px solid var(--border-table-color);
+  border-bottom: 1px solid var(--border-table-color);
+  text-align: left;
+  font-size: 18px;
 }
 
-tbody,
-thead tr:nth-child(2) {
-    text-align: left;
+th[colspan="2"] {
+  text-align: center;
+}
+
+td {
+  text-align: left;
 }
